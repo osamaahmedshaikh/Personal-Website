@@ -1,0 +1,875 @@
+<style>
+    body {
+      background-image: url('14.gif');
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+      background-size: 100% 100%;
+    }
+    </style>
+    </head>
+    <body>
+
+    </body>
+    <head>
+      <style>
+      body {margin:0;}
+      
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        /* background-color: #333; */
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover:not(.active) {
+        background-color: #a5c7a0e7;
+      }
+      
+      .active {
+        background-color:#a5c7a0e7;
+      }
+      </style>
+      </head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="file:///C:/Users/osama/Desktop/webstuff/home.html" style= "font-family: 'Times New Roman', Times, serif;">Home</a>
+    <a href="file:///C:/Users/osama/Desktop/webstuff/News.html"style= "font-family: 'Times New Roman', Times, serif;">News</a>
+    <a href="https://osamaahmedshaikh.wordpress.com/"style= "font-family: 'Times New Roman', Times, serif;">Blog</a>
+    <a href="file:///C:/Users/osama/Desktop/webstuff/contact.html"style= "font-family: 'Times New Roman', Times, serif;">Contact</a>
+    <a href="file:///C:/Users/osama/Desktop/webstuff/about.html"style= "font-family: 'Times New Roman', Times, serif;">About</a>
+  </div>
+</div>
+
+<span style="font-size:30px;cursor:pointer;font-family: 'Times New Roman', Times, serif;" onclick="openNav()">&#9776; Menu</span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.display = "none";
+}
+</script>
+     
+</body>
+      <!-- <body>
+      
+      <ul>
+
+        <li><a href="file:///C:/Users/osama/Desktop/home.html"style= "font-family: 'Times New Roman', Times, serif;font-size: 15px;">Home</a></li>
+        <li><a class="active" href="file:///C:/Users/osama/Desktop/News.html"style= "font-family: 'Times New Roman', Times, serif;font-size: 15px;">Blog</a></li>
+        <li><a href="file:///C:/Users/osama/Desktop/contact.html" style= "font-family: 'Times New Roman', Times, serif;font-size: 15px;">Contact</a></li>
+        <li><a href="file:///C:/Users/osama/Desktop/about.html"style= "font-family: 'Times New Roman', Times, serif;font-size: 15px;">About</a></li>
+        <p style= "color:white;text-align:right;font-family: 'Times New Roman', Times, serif;font-size: 15px;"><b></b>Osama Shaikh </p>
+        
+      </ul>
+      
+      
+<body style="background-color:rgb(0, 0, 0);">
+  <svg height="120" width="`1000">
+    <defs>
+      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%"
+        style="stop-color:rgb(80, 7, 17);stop-opacity:1" />
+        <stop offset="100%"
+        style="stop-color:rgb(255,0,0);stop-opacity:1" />
+      </linearGradient>
+    </defs>
+  </svg> -->
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Add a gray background color with some padding */
+    body {
+    font-family: Arial;
+    padding: 20px;
+    /* background: #f1f1f1; */
+  }
+   */
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  </style>
+  </head>
+  <body>
+  
+  <div class="header">
+  </div>
+  
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2 style= "font-family: 'Times New Roman', Times, serif;">News</h2>
+        <h2 style= "font-family: 'Times New Roman', Times, serif;">Google Canada extends work from home option for employees into July 2021</h2>
+        <h5 style= "font-family: 'Times New Roman', Times, serif;">Google Canada, Jul 27, 2020 </h5>
+        <img src="google.jpg" alt="Girl in a jacket" width="700" height="300">
+        <p style= "font-family: 'Times New Roman', Times, serif;">Google says it is extending the ability for most of its 1,500 Canadian employees to work from home until at least next July.A company spokesperson says it announced the extension of its global voluntary work-from-home option to give employees the ability to plan ahead.</p>
+        <!DOCTYPE html>
+<html>
+   <head>
+      <style>
+         .popup {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #F1F1F1;
+            background-color: rgba(0,0,0,0.4);
+            -webkit-animation-name: fadeIn;
+            -webkit-animation-duration: 0.4s;
+            animation-name: fadeIn;
+            animation-duration: 0.4s
+         }
+         .popup-content {
+            position: fixed;
+            bottom: 0;
+            background-color: #ffffff;
+            width: 100%;
+            -webkit-animation-name: slideIn;
+            -webkit-animation-duration: 0.5s;
+            animation-name: slideIn;
+            animation-duration: 0.5s
+         }
+         .end {
+            color: white;
+            float: right;
+            font-size: 15px;
+            font-weight: bold;
+         }
+         .end:hover,
+         .end:focus {
+            color: #000;
+            text-decoration: underline;
+            cursor: pointer;
+         }
+         .popup-header {
+            padding: 1px 10px;
+            background-color: #8AC1E0;
+            color: white;
+         }
+         .popup-body {padding: 1px 5px;}
+         @-webkit-keyframes slideIn {
+            from {bottom: -300px; opacity: 0}
+            to {bottom: 0; opacity: 1}
+         }
+         @keyframes slideIn {
+            from {bottom: -300px; opacity: 0}
+            to {bottom: 0; opacity: 1}
+         }
+         @-webkit-keyframes fadeIn {
+            from {opacity: 0}
+            to {opacity: 1}
+         }
+         @keyframes fadeIn {
+            from {opacity: 0}
+            to {opacity: 1}
+         }
+      </style>
+   </head>
+   <body>
+
+      <button id="btn">Read More</button>
+      <div id="myModal" class="popup">
+         <!-- Modal content -->
+         <div class="popup-content">
+            <div class="popup-header">
+               <span class="end">×</span>
+               <h2>Google Canada extends work from home option for employees</h2>
+            </div>
+            <div class="popup-body">
+               <p>Google says it is extending the ability for most of its 1,500 Canadian employees to work from home until at least next July.
+
+                A company spokesperson says it announced the extension of its global voluntary work-from-home option to give employees the ability to plan ahead.
+                
+                The option is available to roles that don't require employees to be in the office.
+                
+                The tech company has about 1,500 employees, including engineers, sales leaders and artificial intelligence researchers at offices in Waterloo, Ont., Toronto and Montreal and is building new offices in these cities to accommodate up to 5,000 employees by 2022.
+                
+                An Angus Reid Institute study has suggested that about one-third of Canadians working remotely expect to resume working from the office while about 20 per cent say they will remain primarily at home.
+                
+                Facebook, Shopify Inc. and Open Text Corp. have said that its employees will soon have the option to permanently work remotely.</p>
+            </div>
+         </div>
+      </div>
+      <script>
+         var popup = document.getElementById('myModal');
+         var myBytton = document.getElementById("btn");
+         var span = document.getElementsByClassName("end")[0];
+         myBytton.onclick = function() {
+            popup.style.display = "block";
+         }
+         span.onclick = function() {
+            popup.style.display = "none";
+         }
+         window.onclick = function(event) {
+            if (event.target == popup) {
+               popup.style.display = "none";
+            }
+         }
+      </script>
+   </body>
+</html>
+
+      </div>
+      <div class="card">
+        <h2 style= "font-family: 'Times New Roman', Times, serif;">Watch: Amazon, Apple, Facebook and Google CEOs testify before Congress in historic antitrust hearing</h2>
+        <h5 style= "font-family: 'Times New Roman', Times, serif;">CEO's Testify, July 29, 2020</h5>
+        <img src="download (1).jpg" alt="Girl in a jacket" width="700" height="300">
+        <p style= "font-family: 'Times New Roman', Times, serif;">The top executives at four of the world’s largest and most powerful technology companies are testifying Wednesday before Congress in the culmination of a year-long antitrust inquiry.</p>
+        <!DOCTYPE html>
+<html>
+   <head>
+      <style>
+         .popup {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #F1F1F1;
+            background-color: rgba(0,0,0,0.4);
+            -webkit-animation-name: fadeIn;
+            -webkit-animation-duration: 0.4s;
+            animation-name: fadeIn;
+            animation-duration: 0.4s
+         }
+         .popup-content {
+            position: fixed;
+            bottom: 0;
+            background-color: #ffffff;
+            width: 100%;
+            -webkit-animation-name: slideIn;
+            -webkit-animation-duration: 0.5s;
+            animation-name: slideIn;
+            animation-duration: 0.5s
+         }
+         .end {
+            color: white;
+            float: right;
+            font-size: 15px;
+            font-weight: bold;
+         }
+         .end:hover,
+         .end:focus {
+            color: #000;
+            text-decoration: underline;
+            cursor: pointer;
+         }
+         .popup-header {
+            padding: 1px 10px;
+            background-color: #8AC1E0;
+            color: white;
+         }
+         .popup-body {padding: 1px 5px;}
+         @-webkit-keyframes slideIn {
+            from {bottom: -300px; opacity: 0}
+            to {bottom: 0; opacity: 1}
+         }
+         @keyframes slideIn {
+            from {bottom: -300px; opacity: 0}
+            to {bottom: 0; opacity: 1}
+         }
+         @-webkit-keyframes fadeIn {
+            from {opacity: 0}
+            to {opacity: 1}
+         }
+         @keyframes fadeIn {
+            from {opacity: 0}
+            to {opacity: 1}
+         }
+      </style>
+   </head>
+   <body>
+      <button id="btn">Read More</button>
+      <div id="myModal" class="popup">
+         <!-- Modal content -->
+         <div class="popup-content">
+            <div class="popup-header">
+               <span class="end">×</span>
+               <h2>Watch: Amazon, Apple, Facebook and Google CEOs testify before Congress in historic antitrust hearing</h2>
+            </div>
+            <div class="popup-body">
+               <p>The top executives at four of the world’s largest and most powerful technology companies are testifying Wednesday before Congress in the culmination of a year-long antitrust inquiry.
+
+                The House Judiciary Committee’s antitrust arm will grill Amazon’s Jeff Bezos, Apple’s Tim Cook, Facebook’s Mark Zuckerberg, and Google’s Sundar Pichai on the power their companies wield in the tech sector.
+                
+                “Our founders would not bow before a king nor should we bow before the emperors of a digital economy,” said Rep. David Cicilline, chair of the antitrust subcommittee, in opening remarks.
+                
+                The executives are testifying remotely due to the ongoing coronavirus threat, creating a different dynamic than the blockbuster hearings of the past, like Zuckerberg’s testimony on election interference in 2018. Cicilline reminded the CEOs that they are not allowed to take input from their teams during testimony, but it isn’t clear how or if the committee is enforcing that rule.
+                
+                Early questioning focused on Facebook’s acquisition of Instagram, Apple’s treatment of third-party app developers, and Google’s dominance in search. More than an hour into the hearing, lawmakers still hadn’t posed any questions to Bezos, even though it is the Amazon chief’s first time testifying before Congress.
+                
+                After nearly two hours, the first question for Bezos came from Rep. Pramila Jayapal, a Democrat from Washington who represents Amazon’s hometown, Seattle.
+                
+                “The issue that we’re concerned with here his very simple,” she said. “You have access to data that far exceeds the sellers on your platform with whom you compete … you have access to the entirety of sellers’ pricing and inventory — information past, present, and future — and you dictate the participation of third-party sellers on your platform, so you can set the rules of the game for your competitors but not follow those rules yourself. Do you think that’s fair to the mom and pop businesses who can sell on your platform?”
+                
+                Underlying Jayapal’s line of questioning is a Wall Street Journal investigation from April that found Amazon uses detailed data on third-party sellers in its marketplace to inform the development of in-house products.
+                
+                Bezos said Amazon has a policy prohibiting such use of seller data but, “I can’t guarantee you that that policy has never been violated.”
+                
+                Jayapal was following up on testimony that Amazon attorney Nate Sutton gave one year ago before the same committee claiming the company does not use individual seller data to inform its private-label product strategy.
+                
+                Jayapal also grilled Zuckerberg on its acquisition strategy, accusing Facebook of threatening to copy Instagram and Snapchat while in discussions about buying them.
+                
+                “You’ve used Facebook’s power to threaten smaller competitors and ensure that you always get your way,” she said. “These tactics increase your dominance … Facebook’s model makes it impossible for new companies to flourish successfully.”
+                
+                Zuckerberg said he did not remember threatening competitors and defended the practice of developing features that consumers were demanding at the time.
+                
+                Rep. Mary Gay Scanlon raised a controversial price war between Amazon and Diapers.com that ultimately ended in Amazon acquiring the competitor’s parent company and then shutting it down. Scanlon claimed Amazon lowered prices on diapers to drive the competitor out of business and then raised them when the competitive threat was eliminated.
+                
+                “I don’t remember that at all,” Bezos said. “What I remember is that we matched competitor prices.”</p>
+            </div>
+         </div>
+      </div>
+      <script>
+         var popup = document.getElementById('myModal');
+         var myBytton = document.getElementById("btn");
+         var span = document.getElementsByClassName("end")[0];
+         myBytton.onclick = function() {
+            popup.style.display = "block";
+         }
+         span.onclick = function() {
+            popup.style.display = "none";
+         }
+         window.onclick = function(event) {
+            if (event.target == popup) {
+               popup.style.display = "none";
+            }
+         }
+      </script>
+   </body>
+</html>
+        
+        <!-- <script type="text/javascript">
+          // Popup window code
+          function newPopup(url) {
+            popupWindow = window.open(
+              url,'popUpWindow','height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+          }
+          </script>
+          <p><a href="JavaScript:newPopup('/javascript/examples/sample_popup.cfm');">Open a popup window</a></p> -->
+      
+      
+        </div>
+    </div>
+    <div class="rightcolumn">
+      <div class="card">
+        <h2 style= "font-family: 'Times New Roman', Times, serif;">About Me</h2>
+        <!-- <div class="fakeimg" style="height:100px;">Image</div> -->
+        <p style= "font-family: 'Times New Roman', Times, serif;">My name is Osama Shaikh and welcome to my website here i will be posting daily contents in this blog which we face in daily life it can be political and entertainment. </p>
+      </div>
+      <div class="card">
+        <h3 style= "font-family: 'Times New Roman', Times, serif;">Popular Post</h3>
+        <style>
+          #myProgress {
+            width: 100%;
+            background-color: #ddd;
+          }
+          
+          #myBar {
+            width: 10%;
+            height: 30px;
+            background-color: #4CAF50;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+          }
+          </style>
+          <body>
+          <h1 style= "font-family: 'Times New Roman', Times, serif;">Which item you like the most?</h1>
+          <p1 style= "font-family: 'Times New Roman', Times, serif;">Apple</p1>
+          
+          <div id="myProgress">
+            <div id="myBar">0%</div>
+          </div>
+          
+          <br>
+          <button onclick="move()" style= "font-family: 'Times New Roman', Times, serif;">Vote</button> 
+          
+          <script>
+          var i = 0;
+          function move() {
+            if (i == 0) {
+              i = 1;
+              var elem = document.getElementById("myBar");
+              var width = 10;
+              var id = setInterval(frame, 10);
+              function frame() {
+                if (width >= 100) {
+                  clearInterval(id);
+                  i = 0;
+                } else {
+                  width++;
+                  elem.style.width = width + "%";
+                  elem.innerHTML = width  + "%";
+                }
+              }
+            }
+          }
+          </script>
+<style>
+  #myProgress {
+    width: 100%;
+    background-color: #ddd;
+  }
+  
+  #myBar {
+    width: 10%;
+    height: 30px;
+    background-color: #4CAF50;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+  }
+  </style>
+  <body>
+  
+  <p style= "font-family: 'Times New Roman', Times, serif;">Samsung</p>
+  
+  <div id="myProgress">
+    <div id="myBar">0%</div>
+  </div>
+  
+  <br>
+  <button onclick="move()" style= "font-family: 'Times New Roman', Times, serif;">Vote</button> 
+  
+  <script>
+  var i = 0;
+  function move() {
+    if (i == 0) {
+      i = 1;
+      var elem = document.getElementById("myBar");
+      var width = 10;
+      var id = setInterval(frame, 10);
+      function frame() {
+        if (width >= 100) {
+          clearInterval(id);
+          i = 0;
+        } else {
+          width++;
+          elem.style.width = width + "%";
+          elem.innerHTML = width  + "%";
+        }
+      }
+    }
+  }
+  </script>
+<style>
+  #myProgress {
+    width: 100%;
+    background-color: #ddd;
+  }
+  
+  #myBar {
+    width: 10%;
+    height: 30px;
+    background-color: #4CAF50;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+  }
+  </style>
+  <body>
+  
+  <p style= "font-family: 'Times New Roman', Times, serif;">Huwawei</p>
+  
+  <div id="myProgress">
+    <div id="myBar">0%</div>
+  </div>
+  
+  <br>
+  <button onclick="move()" style= "font-family: 'Times New Roman', Times, serif;">Vote</button> 
+  
+  <script>
+  var i = 0;
+  function move() {
+    if (i == 0) {
+      i = 1;
+      var elem = document.getElementById("myBar");
+      var width = 10;
+      var id = setInterval(frame, 10);
+      function frame() {
+        if (width >= 100) {
+          clearInterval(id);
+          i = 0;
+        } else {
+          width++;
+          elem.style.width = width + "%";
+          elem.innerHTML = width  + "%";
+        }
+      }
+    }
+  }
+  </script>
+  
+              
+        <!-- <div class="fakeimg">Image</div><br>
+        <div class="fakeimg">Image</div><br>
+        <div class="fakeimg">Image</div>
+      </div> -->
+      <div class="card">
+        <h3 style= "font-family: 'Times New Roman', Times, serif;">Follow Me on these Social Networking sites</h3>
+        <a href="https://www.facebook.com/osama.shaikh.507" class="fa fa-facebook"></a>
+        <a href="https://www.linkedin.com/in/osama-shaikh-a54b0438/" class="fa fa-linkedin"></a>
+        <a href="https://www.youtube.com/channel/UC04psR4Z3UQr13kTSdzdF-A?view_as=subscriber" class="fa fa-youtube"></a>
+      </div>
+    </div>
+  </div>
+  </div>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    .fa {
+      padding: 8px;
+      font-size: 20px;
+      width: 30px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      border-radius: 50%;
+    }
+    
+    .fa:hover {
+        opacity: 0.7;
+    }
+    
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+    
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+    
+    .fa-google {
+      background: #dd4b39;
+      color: white;
+    }
+    
+    .fa-linkedin {
+      background: #007bb5;
+      color: white;
+    }
+    
+    .fa-youtube {
+      background: #bb0000;
+      color: white;
+    }
+    
+    .fa-instagram {
+      background: #125688;
+      color: white;
+    }
+    
+    .fa-pinterest {
+      background: #cb2027;
+      color: white;
+    }
+    
+    .fa-snapchat-ghost {
+      background: #fffc00;
+      color: white;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+    
+    .fa-skype {
+      background: #00aff0;
+      color: white;
+    }
+    
+    .fa-android {
+      background: #a4c639;
+      color: white;
+    }
+    
+    .fa-dribbble {
+      background: #ea4c89;
+      color: white;
+    }
+    
+    .fa-vimeo {
+      background: #45bbff;
+      color: white;
+    }
+    
+    .fa-tumblr {
+      background: #2c4762;
+      color: white;
+    }
+    
+    .fa-vine {
+      background: #00b489;
+      color: white;
+    }
+    
+    .fa-foursquare {
+      background: #45bbff;
+      color: white;
+    }
+    
+    .fa-stumbleupon {
+      background: #eb4924;
+      color: white;
+    }
+    
+    .fa-flickr {
+      background: #f40083;
+      color: white;
+    }
+    
+    .fa-yahoo {
+      background: #430297;
+      color: white;
+    }
+    
+    .fa-soundcloud {
+      background: #ff5500;
+      color: white;
+    }
+    
+    .fa-reddit {
+      background: #ff5700;
+      color: white;
+    }
+    
+    .fa-rss {
+      background: #ff6600;
+      color: white;
+    }
+    </style>
+    </head>
+    
+    <body>
+
+    
+    <!-- Add font awesome icons -->
+    <!-- <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-google"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-youtube"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-pinterest"></a>
+    <a href="#" class="fa fa-snapchat-ghost"></a> -->
+    <!-- <a href="#" class="fa fa-skype"></a>
+    <a href="#" class="fa fa-android"></a>
+    <a href="#" class="fa fa-dribbble"></a>
+    <a href="#" class="fa fa-vimeo"></a>
+    <a href="#" class="fa fa-tumblr"></a>
+    <a href="#" class="fa fa-vine"></a>
+    <a href="#" class="fa fa-foursquare"></a>
+    <a href="#" class="fa fa-stumbleupon"></a>
+    <a href="#" class="fa fa-flickr"></a>
+    <a href="#" class="fa fa-yahoo"></a>
+    <a href="#" class="fa fa-reddit"></a>
+    <a href="#" class="fa fa-rss"></a> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {font-family: Arial;}
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+    }
+    
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: #637061e7;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+    }
+    
+    #myBtn:hover {
+      background-color: #555;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+    
+    <!-- <div style="background-color:black;color:white;padding:30px">Scroll Down</div>
+    <div style="background-color:lightgrey;padding:30px 30px 2500px">This example demonstrates how to create a "scroll to top" button that becomes visible 
+      <strong>when the user starts to scroll the page</strong>.</div> -->
+    
+    <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>         
+    </body>
+  </body>
+  </html>
+  
